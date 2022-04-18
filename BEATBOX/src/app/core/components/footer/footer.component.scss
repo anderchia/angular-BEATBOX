@@ -1,0 +1,46 @@
+section {
+  background-color: black;
+
+  padding-top: 90px;
+  padding-bottom: 10px;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 10px;
+
+    img {
+      width: 20px;
+    }
+
+  }
+  a {
+    color: white;
+
+  }
+}
+
+p {
+  color: white;
+}
+ .copy {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   margin-top: 80px;
+ }
+
+ .rrss {
+   margin-top: 20px;
+ }
+
+ .linea {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }

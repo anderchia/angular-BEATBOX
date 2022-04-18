@@ -1,0 +1,8 @@
+<section>
+  <app-artistcard [artist]="artist" class="blanco"></app-artistcard>
+  <div class="blanco botones" >
+  <button (click)="onGoBack()" class="button-75" role="button"><span class="text">Back</span></button>
+  <button (click)="onUpdate(artist)" class="button-75" role="button"><span class="text">Edit</span></button>
+  <button (click)="onDelete()" class="button-75" role="button" routerLink="/artist"><span class="text">Delete</span></button>
+</div>
+</section>

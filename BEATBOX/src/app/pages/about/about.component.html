@@ -1,0 +1,38 @@
+<section >
+  <div class="blanco">
+  <div class="titulo">
+  <h2>Create your artist</h2>
+  </div>
+  <div class="formulario">
+    <form (ngSubmit) = "onSubmit()" [formGroup]="contactForm">
+      <div class="preguntas">
+  <p>Name</p>
+  <input type="text" formControlName="name" placeholder="Rihanna"/>
+  <app-form-errors *ngIf="submitted" [errors]="contactForm.controls['name'].errors">*</app-form-errors>
+  <p>Year</p>
+  <input type="text" formControlName= "year" placeholder="2000"/>
+  <app-form-errors *ngIf="submitted" [errors]="contactForm.controls['year'].errors">*</app-form-errors>
+  <p>Description</p>
+  <input type="text" formControlName= "genre" placeholder="Shine bright like a diamond"/>
+  <app-form-errors *ngIf="submitted" [errors]="contactForm.controls['genre'].errors">*</app-form-errors>
+  <p>Image</p>
+  <input type="text"  formControlName= "image" placeholder="Por ej: http://bestsinger.com/img.jpg"/>
+  <app-form-errors *ngIf="submitted" [errors]="contactForm.controls['image'].errors">*</app-form-errors>
+  <p>Albums</p>
+  <input type="text" formControlName= "albums" placeholder="We found love"/>
+  <app-form-errors *ngIf="submitted" [errors]="contactForm.controls['albums'].errors">*</app-form-errors>
+  <span class="boton">
+    <button (click)="onGoBack()" class="button-75" role="button"><span class="text">Back</span></button>
+  <button class="button-75" role="button">Create</button>
+  </span>
+</div>
+
+  <app-artistcard [artist]="createdArtist"></app-artistcard>
+
+  </form>
+</div>
+</div>
+</section>
+
+
+

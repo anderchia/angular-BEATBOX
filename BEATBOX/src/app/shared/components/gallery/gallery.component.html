@@ -1,0 +1,31 @@
+
+<section>
+  <div class="cajagrande">
+  <figure >
+    <div class="titulo">
+      <h2>Artists</h2>
+    </div>
+    <div class="buscador">
+      Search
+      <input
+      placerholder="Search"
+      [(ngModel)]="filterpost"
+      name="filterpost"
+      type="text"
+      />
+    </div>
+  </figure>
+  <figure class="gallery" *ngFor="let artist of artists | search:filterpost "routerLink="/artists/{{artist._id}}">
+    <div class="cards">
+    <img class="hover_image" src="{{artist.image}}" alt="">
+    <h2 class="hover" >{{artist.name}}</h2>
+    <h3>{{artist.year}}</h3>
+    <h3>{{artist.genre}}</h3>
+    <h4>{{artist.albums}}</h4>
+
+</div>
+
+
+</figure>
+</div>
+</section>

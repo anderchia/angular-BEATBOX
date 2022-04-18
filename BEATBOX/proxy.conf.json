@@ -1,0 +1,6 @@
+// {
+//   "http://localhost:5000/artist"{
+//     "target":"http://localhost:5000/artist",
+//     "secure":false,
+//     "logLevel":"debug"
+// }

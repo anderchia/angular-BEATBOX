@@ -1,0 +1,60 @@
+body {
+  background: white;
+  color: white;
+
+}
+.search-button {
+  width: 400px;
+  height: 50px;
+  // margin: 150px auto;
+}
+.container {
+  width: 400px;
+  position: relative;
+}
+.container .lupa {
+  position: absolute;
+  margin-left: 28px;
+  margin-top: 27px;
+  color: white;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+#search {
+  width: 70px;
+  height: 70px;
+  background-color: fuchsia;
+  color: white;
+  border: none;
+  font-size: 0.9em;
+  float: left;
+  padding-left: 70px;
+  -webkit-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
+}
+#search:active,
+#search:focus {
+  outline: 0;
+  width: 400px;
+  padding-right: 20px;
+}
+.container:hover #search {
+  width: 400px;
+  background-color: fuchsia;
+}
+.container:hover .lupa {
+  color: white;
+}
+::-webkit-input-placeholder {
+  color: white;
+}
+:-moz-placeholder {
+  color: white;
+}
+::-moz-placeholder {
+  color: white;
+}
+:-ms-input-placeholder {
+  color: white;
+}
+
